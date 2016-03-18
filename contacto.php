@@ -243,7 +243,7 @@
 
                 <div role="form" class="contact">
 
-                    <form data-toggle="validator" method="post" action="contacto_envio.php"
+                    <form data-toggle="validator" method="post" action="contacto_envio.php" id="frmContacto"
                           class="contact-form aSubmit">
                         <div style="display:none"><input type="text" name="maximus" value=""></div>
                         <input type="hidden" name="theSubject" value="StructurePress Contact Request">
@@ -302,7 +302,9 @@
                             </div>
                         </div>
 
-                        <div id="response"></div>
+                        <div id="response">
+
+                        </div>
 
                     </form>
 
@@ -334,7 +336,7 @@
 
 
 <script
-    src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false&key=AIzaSyCktFmBbMhFymyV5dC1FXqHm8eV-lQpNvY"></script>
+    src="https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyCktFmBbMhFymyV5dC1FXqHm8eV-lQpNvY"></script>
 <script>
     var map;
     function initMap() {
@@ -368,6 +370,34 @@
 
     }
     google.maps.event.addDomListener(window, 'load', initMap);
+</script>
+
+<script>
+
+    var loading = '<img src="images/ajax-loader.gif" width="22" /> Cargando ...';
+
+    jQuery(function () {
+        jQuery("#frmContacto").submit(function (e) {
+            e.preventDefault();
+            jQuery("#response").html(loading);
+            jQuery.ajax({
+                url: jQuery(this).attr('action'),
+                data: jQuery(this).serialize(),
+                method: 'post',
+                cache: false
+            }).success(function (data) {
+                jQuery("#response").html("");
+                if (data == 'ok') {
+                    jQuery("#response").html("Correo de contacto enviado !!").addClass("verde");
+                } else if (data == 'fallo') {
+                    jQuery("#response").html("Se produjo un error al enviar este correo.").addClass("rojo");
+                }
+                setTimeout(function () {
+                    jQuery("#response").html("");
+                }, 3000);
+            });
+        });
+    });
 </script>
 
 </body>
