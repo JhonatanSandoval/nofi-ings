@@ -1,0 +1,26 @@
+.boton_amarillo {
+    background: linear-gradient(#FFF500, #FFF501);
+    text-shadow: 0 1px rgba(0, 0, 0, 0.15);
+    transition: none;
+    color: black;
+    border: none;
+    border-radius: 5px;
+}
+
+.boton_amarillo:hover {
+    background: linear-gradient(#F0E600, #F0E600);
+    text-shadow: 0 1px rgba(0, 0, 0, 0.15);
+    transition: none;
+    color: black;
+}
+
+.div_galeria {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.img_gallery img {
+    border: 3px solid #636262;
+    border-radius: 4px;
+    margin: 8px;
+}
