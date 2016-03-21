@@ -1,5 +1,11 @@
 <?php
 include 'global.php';
+
+$page = '';
+if (isset($_GET['p'])) {
+    $page = $_GET['p'];
+}
+
 ?>
 <!DOCTYPE html>
 <html lang="en-US">
@@ -172,183 +178,46 @@ include 'global.php';
 
     <div class="container margin-bottom-30">
 
-        <div class="row margin-bottom-30">
+        <?php if ($page == '') { ?>
 
-            <div class="col-md-12">
+            <div class="row margin-bottom-30">
 
-                <div class="open-position">
-                    <div class="open-position__content-container" style="width: 100%;">
-                        <div class="open-position__content">
-                            <p>
-                                Somos una empresa de más de 20 años, con experiencia en diseño de planos, construcción
-                                de fachadas, supervisión de obras de construcción y consultoría general. <br/><br/>
+                <div class="col-md-12">
 
-                                Entre otros servicios destacan: construcciones industriales, de sanamientos,
-                                declaraciones de fábrica, independizaciones, desarrollo de planos para vivienda,
-                                comercio, sub-divisiones, acumulaciones, lotización y valorizaciones comerciales.
+                    <div class="open-position">
+                        <div class="open-position__content-container" style="width: 100%;">
+                            <div class="open-position__content">
+                                <p>
+                                    Somos una empresa de más de 20 años, con experiencia en diseño de planos,
+                                    construcción
+                                    de fachadas, supervisión de obras de construcción y consultoría general. <br/><br/>
 
-                            </p>
+                                    Entre otros servicios destacan: construcciones industriales, de sanamientos,
+                                    declaraciones de fábrica, independizaciones, desarrollo de planos para vivienda,
+                                    comercio, sub-divisiones, acumulaciones, lotización y valorizaciones comerciales.
+
+                                </p>
+                            </div>
                         </div>
                     </div>
+
                 </div>
+                <!-- /.col -->
 
             </div>
-            <!-- /.col -->
-
-        </div>
-        <!-- /.row -->
+            <!-- /.row -->
+        <?php } ?>
 
         <div class="row">
 
             <main id="main" class="site-main  col-xs-12  col-lg-9  col-lg-push-3" role="main">
-
-                <div class="row margin-bottom-30">
-
-                    <div class="col-md-6">
-
-                        <div class="page-box--block">
-                            <a class="page-box__picture" href="general.php">
-                                <img src="images/61-360x240.jpg" srcset="images/61-360x240.jpg 360w, images/61.jpg 840w"
-                                     sizes="(min-width: 992px) 360px, calc(100vw - 30px)" class="wp-post-image"
-                                     alt="Construction Consultant" height="240" width="360">
-                            </a>
-
-                            <div class="page-box__content">
-                                <h4 class="page-box__title">
-                                    <a href="general.php">Contrataci&oacute;n general</a>
-                                </h4>
-
-                                <p class="page-box__text">
-                                    Puede visitarnos en nuestro local central, donde lo atenderá personalmente nuestro
-                                    generente general, el Ing. Wilder Ulises Novoa Figueroa.
-                                </p>
-                                <a href="general.php"
-                                   class="page-box__more-link">Leer m&aacute;s ...</a>
-                            </div>
-                        </div>
-
-                    </div>
-                    <!-- /.col -->
-
-                    <div class="col-md-6">
-
-                        <div class="page-box--block">
-                            <a class="page-box__picture" href="obras.php">
-                                <img src="images/42-360x240.jpg" srcset="images/42-360x240.jpg 360w, images/42.jpg 840w"
-                                     sizes="(min-width: 992px) 360px, calc(100vw - 30px)" class="wp-post-image"
-                                     alt="Green Building" height="240" width="360">
-                            </a>
-
-                            <div class="page-box__content">
-                                <h4 class="page-box__title">
-                                    <a href="obras.php">Supervisiones de obras</a>
-                                </h4>
-
-                                <p class="page-box__text">
-                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
-                                    Ipsum has been the industry's standard dummy text ever since the 1500s, when an
-                                    unknown printer took a galley of type and ...
-                                </p>
-                                <a href="obras.php"
-                                   class="page-box__more-link">Leer m&aacute;s ...</a>
-                            </div>
-                        </div>
-
-                    </div>
-                    <!-- /.col -->
-
-
-                </div>
-                <!-- /.row -->
-
-                <div class="row margin-bottom-30">
-
-                    <div class="col-md-6">
-
-                        <div class="page-box--block">
-                            <a class="page-box__picture" href="planos.php">
-                                <img src="images/23-360x240.jpg" srcset="images/23-360x240.jpg 360w, images/23.jpg 840w"
-                                     sizes="(min-width: 992px) 360px, calc(100vw - 30px)" class="wp-post-image"
-                                     alt="General Contracting" height="240" width="360">
-                            </a>
-
-                            <div class="page-box__content">
-                                <h4 class="page-box__title">
-                                    <a href="planos.php">Dise&ntilde;o de planos</a>
-                                </h4>
-
-                                <p class="page-box__text">
-                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
-                                    Ipsum has been the industry's standard dummy text ever since the 1500s, when an
-                                    unknown printer took a galley of type and ...
-                                </p>
-                                <a href="planos.php"
-                                   class="page-box__more-link">Leer m&aacute;s ...</a>
-                            </div>
-                        </div>
-
-                    </div>
-                    <!-- /.col -->
-
-                    <div class="col-md-6">
-
-                        <div class="page-box--block">
-                            <a class="page-box__picture"
-                               href="fachadas.php">
-                                <img
-                                    src="https://demo.proteusthemes.com/structurepress/wp-content/uploads/sites/28/2015/11/22-360x240.jpg"
-                                    srcset="https://demo.proteusthemes.com/structurepress/wp-content/uploads/sites/28/2015/11/22-360x240.jpg 360w, https://demo.proteusthemes.com/structurepress/wp-content/uploads/sites/28/2015/11/22.jpg 840w"
-                                    sizes="(min-width: 992px) 360px, calc(100vw - 30px)" class="wp-post-image"
-                                    alt="Metal Roofing" height="240" width="360">
-                            </a>
-
-                            <div class="page-box__content">
-                                <h4 class="page-box__title">
-                                    <a href="fachadas.php">
-                                        Construcci&oacute;n de fachadas
-                                    </a>
-                                </h4>
-
-                                <p class="page-box__text">
-                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
-                                    Ipsum has been the industry's standard dummy text ever since the 1500s, when an
-                                    unknown printer took a galley of type and ...
-                                </p>
-                                <a href="fachadas.php"
-                                   class="page-box__more-link">Leer m&aacute;s ...</a>
-                            </div>
-                        </div>
-
-                    </div>
-                    <!-- /.col -->
-
-                </div>
-                <!-- /.row -->
 
             </main>
 
             <div class="col-xs-12  col-lg-3  col-lg-pull-9">
 
                 <div class="sidebar widget widget_nav_menu" role="complementary">
-
-                    <ul class="menu">
-                        <li class="current-menu-item">
-                            <a href="servicios.php">Todos los Servicios</a>
-                        </li>
-                        <li>
-                            <a href="planos.php">Dise&ntilde;o de Planos</a>
-                        </li>
-                        <li>
-                            <a href="obras.php">Supervisiones de obras</a>
-                        </li>
-                        <li>
-                            <a href="fachadas.php">Construcci&oacute;n de fachadas</a>
-                        </li>
-                        <li>
-                            <a href="general.php">Contrataci&oacute;n general</a>
-                        </li>
-                    </ul>
-
+                    <?php include 'menu_lateral.php'; ?>
                 </div>
                 <!-- /.sidebar -->
 
@@ -364,9 +233,7 @@ include 'global.php';
 </div>
 <!-- /.boxed-container -->
 
-
 <?php include 'footer.php'; ?>
-
 
 <script src="js/jquery.js"></script>
 <script src="js/modernizr.custom.24530.js"></script>
@@ -375,6 +242,35 @@ include 'global.php';
 <script src="js/featherlight.js"></script>
 <script src="js/main.min.js?ver=1.1.0-3-g4c75ad2"></script>
 <script src="js/styleswitcher.js"></script>
+<script>
+    var page = '<?php echo $page;?>';
+
+    jQuery(function () {
+        consultarServicio();
+    });
+
+    function consultarServicio() {
+        var curl = '';
+        if (page != '') {
+            curl = page + '.php';
+        } else {
+            curl = 'servicios_general.php';
+        }
+
+        aplicarCurrent();
+
+        jQuery('#main').load('content/' + curl);
+    }
+
+    function aplicarCurrent() {
+        jQuery('.sidebar ul li').removeClass('current-menu-item');
+        if (page != '') {
+            jQuery('#' + page).addClass('current-menu-item');
+        } else {
+            jQuery('#general_servicios').addClass('current-menu-item');
+        }
+    }
+</script>
 
 </body>
 </html>
