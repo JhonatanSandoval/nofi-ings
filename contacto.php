@@ -1,3 +1,6 @@
+<?php
+include 'global.php';
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,6 +8,7 @@
     <meta http-equiv="Content-type" content="text/html; charset=utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NofiIng's S.A.C. :. Contacto</title>
+    <link rel="stylesheet" href="fonts/fonts.css" type="text/css" media="all">
     <link rel="stylesheet" href="css/style.css" type="text/css" media="all">
     <link rel="stylesheet"
           href="http://fonts.googleapis.com/css?family=Roboto%3A700%7COpen+Sans%3A400%2C700&#038;subset=latin"
@@ -183,7 +187,7 @@
 
                     <div class="card-block contact-profile__container">
                         <div class="contact-profile__social-icons">
-                            <a class="contact-profile__social-icon" href="https://www.facebook.com/"
+                            <a class="contact-profile__social-icon" href="<?php echo FB_URL; ?>"
                                target="_blank">
                                 <i class="fa fa-facebook-square"></i></a>
                             <a class="contact-profile__social-icon" href="https://twitter.com/"
@@ -209,7 +213,7 @@
                                     <i class="fa fa-phone"></i>
                                 </div>
                                 <p class="contact-profile__text">
-                                    (01) 287 - 2535
+                                    (01) 287 - 2535 | 993 120 467
                                 </p>
                             </div>
                             <div class="contact-profile__item">
@@ -244,7 +248,7 @@
                 <div role="form" class="contact">
 
                     <form data-toggle="validator" method="post" action="contacto_envio.php" id="frmContacto"
-                          class="contact-form aSubmit">
+                          class="contact-form aSubmit" autocomplete="off">
                         <div style="display:none"><input type="text" name="maximus" value=""></div>
                         <input type="hidden" name="theSubject" value="StructurePress Contact Request">
 

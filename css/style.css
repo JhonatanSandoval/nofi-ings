@@ -376,6 +376,7 @@ h1, h2, h3, h4, h5, h6 {
 p {
     margin-top: 0;
     margin-bottom: 1rem;
+    color: #4A1E1A;
 }
 
 abbr[title], abbr[data-original-title] {
@@ -4295,6 +4296,7 @@ img {
 
 p.smal {
     font-size: 14px;
+    color: #4A1E1A;
 }
 
 a:focus, a:active {
@@ -4650,6 +4652,7 @@ a:focus, a:active {
     margin-top: 0.375rem;
     margin-bottom: 0;
     font-size: 1rem;
+    color: #4A1E1A;
 }
 
 /* 05.04. Breadcrumbs */
@@ -5332,6 +5335,10 @@ body.boxed .footer-bottom::before, body.boxed .footer-bottom::after, body.boxed 
         position: absolute;
         width: 32.5rem;
         top: 6%;
+    }
+
+    .jumbotron-content__description p {
+        color: white;
     }
 }
 
@@ -6056,6 +6063,7 @@ body.boxed .footer-bottom::before, body.boxed .footer-bottom::after, body.boxed 
     padding: 1.125rem 1.25rem;
     margin-bottom: 1.875rem;
     font-size: 0.875rem;
+    color: #4A1E1A;
 }
 
 .contact-textarea {

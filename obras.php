@@ -1,5 +1,5 @@
 <?php
-
+include 'global.php';
 $Galeria = array(
     'obras2.jpg', 'obras3.jpg', 'obras4.jpg', 'obras5.jpg', 'obras6.jpg', 'obras7.jpg', 'obras8.jpg'
 );
@@ -12,6 +12,7 @@ $Galeria = array(
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NofiIng's S.A.C. :. Home</title>
+    <link rel="stylesheet" href="fonts/fonts.css" type="text/css" media="all">
     <link rel="stylesheet" href="css/style.css" type="text/css" media="all">
     <link rel="stylesheet"
           href="http://fonts.googleapis.com/css?family=Roboto%3A700%7COpen+Sans%3A400%2C700&#038;subset=latin"
@@ -93,7 +94,7 @@ $Galeria = array(
 
                             <div class="icon-box__text">
                                 <h4 class="icon-box__title">Teléfono contacto:</h4>
-                                <span class="icon-box__subtitle">(01) 287 - 2535</span>
+                                <span class="icon-box__subtitle">(01) 287 - 2535 | 993 120 467</span>
                             </div>
                         </div>
                         <!-- /.icon-box -->
@@ -129,7 +130,7 @@ $Galeria = array(
                     </div>
 
                     <div class="widget">
-                        <a class="social-icons__link" href="https://www.facebook.com" target="_blank">
+                        <a class="social-icons__link" href="<?php echo FB_URL; ?>" target="_blank">
                             <i class="fa fa-facebook-square"></i>
                         </a>
                         <a class="social-icons__link" href="https://twitter.com" target="_blank">
