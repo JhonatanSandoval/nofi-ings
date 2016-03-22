@@ -85,5 +85,25 @@ $servicios = array(
 
         'subcateg' => array(
             array('nombre' => 'Regularización de propiedad por posesión', 'id' => 'reg_propiedad', 'texto' => '')
-        ))
+        )),
+
+    array('nombre' => 'Supervisión de Obras', 'id' => 'sub_obras',
+        'texto' => 'Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el
+            texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se
+            dedica a la imprenta)',
+
+        'subcateg' => array() ),
+
+    array('nombre' => 'Diseño de Fachadas', 'id' => 'dis_fachadas',
+        'texto' => 'Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el
+            texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se
+            dedica a la imprenta)',
+
+        'subcateg' => array(
+            array('nombre' => 'Esquinas', 'id' => 'esquinas', 'texto' => ''),
+            array('nombre' => 'Comerciales', 'id' => 'comerciales', 'texto' => ''),
+            array('nombre' => 'Industriales', 'id' => 'industriales', 'texto' => ''),
+            array('nombre' => 'Intermedio', 'id' => 'intermedio', 'texto' => ''),
+            array('nombre' => 'Recreación', 'id' => 'recreacion', 'texto' => ''),
+        )),
 );

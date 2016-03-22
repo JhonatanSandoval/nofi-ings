@@ -86,20 +86,7 @@ $prArray = array(
                         </li>
                         <li class="menu-item-has-children">
                             <a href="servicios.php">Servicios</a>
-                            <ul class="sub-menu">
-                                <li>
-                                    <a href="planos.php">Dise&ntilde;o de planos</a>
-                                </li>
-                                <li>
-                                    <a href="obras.php">Supervisiones de obras</a>
-                                </li>
-                                <li>
-                                    <a href="fachadas.php">Construcci&oacute;n de fachadas</a>
-                                </li>
-                                <li>
-                                    <a href="general.php">Contrataci&oacute;n general</a>
-                                </li>
-                            </ul>
+                            <?php include 'menu_header.php'; ?>
                         </li>
                         <li>
                             <a href="contacto.php">Contacto</a>
@@ -190,8 +177,31 @@ $prArray = array(
     <!-- /.page-header -->
 
     <div id="div_video" style="margin: 35px; text-align: center;">
-        <iframe width="600" height="340"
-                src="https://www.youtube.com/embed/BqPieWYFhzI" frameborder="0" allowfullscreen></iframe>
+        <div class="col-md-4">
+            <iframe width="100%" height="340"
+                    src="https://www.youtube.com/embed/BqPieWYFhzI" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <div class="col-md-4">
+            <iframe width="100%" height="340"
+                    src="https://www.youtube.com/embed/yvwjPeAngcs" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <div class="col-md-4">
+            <iframe width="100%" height="340"
+                    src="https://www.youtube.com/embed/_c5WUdOH6fg" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <div class="col-md-4">
+            <iframe width="100%" height="340"
+                    src="https://www.youtube.com/embed/O0kSK4Spl14" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <div class="col-md-4">
+            <iframe width="100%" height="340"
+                    src="https://www.youtube.com/embed/1z3DRCcuWVo" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <div class="col-md-4">
+            <iframe width="100%" height="340"
+                    src="https://www.youtube.com/embed/SCsAYyuWlcs" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <div class="clearfix"></div>
     </div>
 
     <!-- // galeria de imagenes -->

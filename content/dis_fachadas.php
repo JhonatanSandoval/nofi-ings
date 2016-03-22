@@ -3,7 +3,7 @@ include '../global.php';
 
 $item = null;
 foreach ($servicios as $menu_item) {
-    if ($menu_item['id'] == 'reg_licencia') {
+    if ($menu_item['id'] == 'dis_fachadas') {
         $item = $menu_item;
         break;
     }
@@ -26,8 +26,6 @@ $Galeria = filesFromFolderToArray('../fotos/' . $item['id']);
     <script src="fancybox/source/jquery.fancybox.js"></script>
 </head>
 <body>
-
-
 <div class="row margin-bottom-30">
 
     <div class="col-md-6">
@@ -61,11 +59,6 @@ $Galeria = filesFromFolderToArray('../fotos/' . $item['id']);
             creación de las hojas "Letraset", las cuales contenian pasajes de Lorem Ipsum, y más recientemente con
             software de autoedición, como por ejemplo Aldus PageMaker, el cual incluye versiones de Lorem Ipsum.
 
-            <br/><br/>
-            Es un hecho establecido hace demasiado tiempo que un lector se distraerá con el contenido del texto de un
-            sitio mientras que mira su diseño. El punto de usar Lorem Ipsum es que tiene una distribución más o menos
-            normal de las letras, al contrario de usar textos como por ejemplo "Contenido aquí, contenido aquí". Estos
-            textos hacen parecerlo un español que se puede leer.
         </p>
 
         <?php include '../common_content.php'; ?>
@@ -75,7 +68,6 @@ $Galeria = filesFromFolderToArray('../fotos/' . $item['id']);
 
 </div>
 <!-- /.row -->
-
 
 <script>
     jQuery(function () {
