@@ -140,7 +140,8 @@ include "global.php";
                 <!-- /.jumbotron__widgets -->
 
                 <div class="header__featured-link">
-                    <a class="btn btn-primary boton_amarillo" target="_self" href="contacto.php">SOLICITAR PRESUPUESTO</a>
+                    <a class="btn btn-primary boton_amarillo" target="_self" href="contacto.php">SOLICITAR
+                        PRESUPUESTO</a>
                 </div>
 
             </div>
@@ -162,12 +163,13 @@ include "global.php";
 
                     <div class="container">
                         <div class="jumbotron-content">
-                            <h1 class="jumbotron-content__title">Construcciones de calidad </h1>
+                            <h1 class="jumbotron-content__title">Consultoría de proyectos</h1>
 
                             <div class="jumbotron-content__description">
                                 <p>
-                                    Creemos que la privacidad y la elegancia van mucho de la mano. Por eso elaboramos las mejores
-                                    construcciones de fachadas.
+                                    Creemos que la privacidad y la elegancia van mucho de la mano. Por eso dirigimos las
+                                    mejores
+                                    construcciones.
                                 </p>
 
                                 <p>
@@ -193,7 +195,8 @@ include "global.php";
 
                             <div class="jumbotron-content__description">
                                 <p>
-                                    Prestamos lo mejor en servicios de diseño y elaboración de planos para hogar y edificios.
+                                    Prestamos lo mejor en servicios de diseño y elaboración de planos para hogar y
+                                    edificios.
                                 </p>
 
                             </div>
@@ -214,8 +217,9 @@ include "global.php";
 
                             <div class="jumbotron-content__description">
                                 <p>
-                                    Estamos para servirte: tenemos profesionales altamente calificados que te ayudarán en el proyecto
-                                     que necesites.
+                                    Estamos para servirte: tenemos profesionales altamente calificados que te ayudarán
+                                    en el proyecto
+                                    que necesites.
                                 </p>
                             </div>
                             <!-- /.jumbotron-content__description -->
