@@ -10,6 +10,9 @@ foreach ($servicios as $menu_item) {
 }
 
 include '../util/funciones.php';
+if (!is_dir('../fotos/' . $item['id'])) {
+    mkdir('../fotos/' . $item['id']);
+}
 $Galeria = filesFromFolderToArray('../fotos/' . $item['id']);
 
 ?>
@@ -92,6 +95,9 @@ $Galeria = filesFromFolderToArray('../fotos/' . $item['id']);
             <div class="subcateg">
                 <div class="accordion panel-group" id="accordion-widget" role="tablist" aria-multiselectable="true">
                     <?php foreach ($subcateg as $x => $item_sub) {
+                        if (!is_dir('../fotos/' . $item['id'] . '/' . $item_sub['id'])) {
+                            mkdir('../fotos/' . $item['id'] . '/' . $item_sub['id']);
+                        }
                         $Galeria_sub = filesFromFolderToArray('../fotos/' . $item['id'] . '/' . $item_sub['id']);
                         ?>
                         <div class="accordion__panel panel panel-default">
