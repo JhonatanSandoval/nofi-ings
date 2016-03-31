@@ -34,23 +34,22 @@ $Galeria = filesFromFolderToArray('../fotos/' . $item['id']);
         <h4><?php echo $item['nombre']; ?></h4>
 
         <p>
-            Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el
-            texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se
-            dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un
-            libro de textos especimen.
+           Ubicación, distribución, cortes, cimentación, estructuras,
+instalaciones eléctricas, instalaciones comunicaciones, instalación sanitarias agua,
+instalación sanitarias  desague , instalación gas <natural class="">            </natural>
         </p>
 
     </div>
     <div class="col-md-6">
         <p>
-            <a data-featherlight="image" href="images/61.jpg">
-                <img class="alignnone" src="images/61.jpg" alt="61" height="420" width="840">
+            <a data-featherlight="image" href="fotos/elaboracion_plano/planos3.jpg">
+                <img class="alignnone" src="fotos/elaboracion_plano/planos3.jpg" alt="61" height="420" width="840">
             </a>
         </p>
     </div>
 
     <div class="col-md-12">
-        <p>
+        <!--<p>
             No sólo sobrevivió 500 años, sino que tambien ingresó como texto de relleno en
             documentos electrónicos, quedando esencialmente igual al original.
 
@@ -61,7 +60,7 @@ $Galeria = filesFromFolderToArray('../fotos/' . $item['id']);
             software de autoedición, como por ejemplo Aldus PageMaker, el cual incluye versiones de Lorem Ipsum.
 
         </p>
-
+-->
         <?php include '../common_content.php'; ?>
 
     </div>

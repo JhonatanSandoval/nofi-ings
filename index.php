@@ -7,7 +7,7 @@ include "global.php";
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NofiIng's S.A.C. :. Home</title>
+    <title>NofiIng's S.A.C. :. Inicio</title>
     <link rel="stylesheet" href="fonts/fonts.css" type="text/css" media="all">
     <link rel="stylesheet" href="css/style.css" type="text/css" media="all">
     <link rel="stylesheet"
@@ -64,7 +64,7 @@ include "global.php";
 
                     <ul class="main-navigation js-main-nav" role="menubar">
                         <li class="current-menu-item">
-                            <a href="index.php">Home</a>
+                            <a href="index.php">Inicio</a>
                         </li>
                         <li>
                             <a href="nosotros.php">Nosotros</a>
@@ -149,6 +149,13 @@ include "global.php";
 
         </div>
         <!-- /.header -->
+        <style>
+            .jumbotron-content__description > p{font-size:14px;}
+            #my_button_left{
+                margin-left: -60px !important;
+                margin-bottom: -80px !important;
+            }
+        </style>
 
     </header>
 
@@ -163,20 +170,18 @@ include "global.php";
 
                     <div class="container">
                         <div class="jumbotron-content">
-                            <h1 class="jumbotron-content__title">Consultoría de proyectos</h1>
+                            <h1 class="jumbotron-content__title">Consultoría de proyectos de planos</h1>
 
                             <div class="jumbotron-content__description">
-                                <p>
-                                    Creemos que la privacidad y la elegancia van mucho de la mano. Por eso dirigimos las
-                                    mejores
-                                    construcciones.
+                                <p style="text-size:12px">
+                                    Diseño de Planos de construción civil, viviendas , hospedajes , comercio , industriales , educación...
                                 </p>
-
                                 <p>
                                     <a class="btn btn-primary boton_amarillo" href="nosotros.php" target="_self">LEER M&Aacute;S</a>
                                     <a class="btn btn-tertiary" href="servicios.php" target="_self">NUESTROS
                                         SERVICIOS</a>
                                 </p>
+
                             </div>
                             <!-- /.jumbotron-content__description -->
                         </div>
@@ -236,11 +241,11 @@ include "global.php";
             <div class="jumbotron__extras">
 
                 <div class="container">
-
-                    <a class="left jumbotron__control" href="#headerCarousel" role="button" data-slide="prev">
+                    
+                    <a class="left jumbotron__control" id="my_button_left" href="#headerCarousel" role="button" data-slide="prev">
                         <i class="fa fa-caret-left"></i>
                     </a>
-                    <a class="right jumbotron__control" href="#headerCarousel" role="button" data-slide="next">
+                    <a class="right jumbotron__control" id="my_button_right" href="#headerCarousel" role="button" data-slide="next">
                         <i class="fa fa-caret-right"></i>
                     </a>
 

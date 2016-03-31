@@ -79,7 +79,7 @@ $prArray = array(
 
                     <ul class="main-navigation js-main-nav" role="menubar">
                         <li>
-                            <a href="index.php">Home</a>
+                            <a href="index.php">Inicio</a>
                         </li>
                         <li class="current-menu-item">
                             <a href="nosotros.php">Nosotros</a>
@@ -189,18 +189,22 @@ $prArray = array(
             <iframe width="100%" height="340"
                     src="https://www.youtube.com/embed/_c5WUdOH6fg" frameborder="0" allowfullscreen></iframe>
         </div>
+        <!--
         <div class="col-md-4">
             <iframe width="100%" height="340"
                     src="https://www.youtube.com/embed/O0kSK4Spl14" frameborder="0" allowfullscreen></iframe>
-        </div>
+        </div>  -->
+       
         <div class="col-md-4">
             <iframe width="100%" height="340"
-                    src="https://www.youtube.com/embed/1z3DRCcuWVo" frameborder="0" allowfullscreen></iframe>
+                    src="https://www.youtube.com/embed/W94_4qi0dT4" frameborder="0" allowfullscreen></iframe>
         </div>
-        <div class="col-md-4">
+       
+        <div class="col-md-8">
             <iframe width="100%" height="340"
                     src="https://www.youtube.com/embed/SCsAYyuWlcs" frameborder="0" allowfullscreen></iframe>
         </div>
+
         <div class="clearfix"></div>
     </div>
 
